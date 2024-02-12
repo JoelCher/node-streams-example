@@ -1,11 +1,11 @@
 import { Controller, Get, Req, Res } from '@nestjs/common';
 import { Response, Request } from 'express';
 import { PassThrough } from 'stream';
-import { faker } from '@faker-js/faker'
+import { faker } from '@faker-js/faker';
+
 @Controller()
 export class AppController {
-  constructor() {}
-
+  constructor() { }
 
   @Get('stream')
   streamData(@Res() res: Response, @Req() req: Request) {
